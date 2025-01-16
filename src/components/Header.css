@@ -1,0 +1,105 @@
+/* General styles for the header */
+.header {
+    width: 100%; /* Use full width for responsiveness */
+    height: auto; /* Adjust height dynamically */
+    padding: 15px 20px; /* Add padding for spacing */
+    background-color: #002421; /* Example background color, adjust as needed */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box; /* Include padding in width/height calculations */
+}
+
+/* Logo container */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Logo styling */
+.ecell-logo {
+    width: 70px; /* Adjusted size for responsiveness */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain;
+}
+
+/* Navigation bar */
+.nav-bar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    gap: 15px; /* Add spacing between nav items */
+}
+
+.nav-bar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar li {
+    margin: 0 10px; /* Adjust spacing for better responsiveness */
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Add hover effect */
+}
+
+.nav-bar a:hover {
+    color: #00cc99; /* Example hover color */
+}
+.nav-bar a.active {
+    color: #00cc99; /* Color for the active page */
+    font-weight: bold; /* Optional: Make the active link bold */
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .header {
+        padding: 10px 15px; /* Adjust padding for smaller screens */
+    }
+    .ecell-logo {
+        width: 60px; /* Smaller logo for tablets */
+    }
+    .nav-bar a {
+        font-size: 14px; /* Reduce font size */
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-bar ul {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-end;
+        gap: 10px;
+    }
+    .nav-bar li {
+        margin: 0; /* Remove horizontal spacing */
+    }
+    .nav-bar a {
+        font-size: 14px; /* Keep smaller font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        flex-direction: column; /* Stack header content vertically */
+        align-items: center;
+        text-align: center;
+    }
+    .logo-container {
+        margin-bottom: 10px; /* Add spacing below the logo */
+    }
+    .nav-bar ul {
+        width: 100%;
+        justify-content: center; /* Center the nav links */
+    }
+    .nav-bar a {
+        font-size: 12px; /* Smaller font for mobile screens */
+    }
+}

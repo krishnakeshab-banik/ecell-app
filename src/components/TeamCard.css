@@ -1,0 +1,82 @@
+/* TeamCard.css */
+.team-card {
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 12px;
+    width: 277.2px; /* Card width */
+    height: 356.4px; /* Card height */
+    overflow: hidden;
+    padding: 1rem 0.5rem;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.team-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.team-card-image {
+    width: 261.36px; /* Image width */
+    height: 237.6px; /* Image height */
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.team-card-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #000000;
+    margin: 0.5rem 0;
+}
+
+.team-card-position {
+    font-size: 1rem;
+    color: #000000;
+    margin-bottom: 1rem;
+}
+
+.team-card-socials {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Space between social icons */
+    margin-top: 10px;
+}
+
+.social-icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00A99D; /* Icon container background */
+    border-radius: 50%; /* Circular shape */
+    width: 40px; /* Icon size */
+    height: 40px;
+    color: #000000; /* Icon color */
+    font-size: 1.2rem;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.social-icon-container:hover {
+    transform: scale(1.1); /* Scale effect */
+    background-color: #00a455; /* Hover background */
+    color: #ffffff; /* Hover text color */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .team-card {
+        max-width: 180px;
+        padding: 1rem;
+    }
+
+    .team-card-socials {
+        gap: 8px; /* Reduced gap for smaller screens */
+    }
+
+    .social-icon-container {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+}

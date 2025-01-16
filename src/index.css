@@ -1,0 +1,26 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #101010;
+  color: white;
+}
+
+.team-grid, .members-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+button {
+  background: green;
+  border: none;
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: darkgreen;
+}
