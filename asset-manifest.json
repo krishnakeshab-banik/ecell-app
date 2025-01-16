@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ecell-app/static/css/main.452c2781.css",
+    "main.js": "/ecell-app/static/js/main.573df880.js",
+    "index.html": "/ecell-app/index.html",
+    "main.452c2781.css.map": "/ecell-app/static/css/main.452c2781.css.map",
+    "main.573df880.js.map": "/ecell-app/static/js/main.573df880.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.452c2781.css",
+    "static/js/main.573df880.js"
+  ]
+}
